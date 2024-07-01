@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -775,10 +775,10 @@ line 3 of code
 <h3><a href="https://github.com/markdown-it/markdown-it-mark">&lt;mark&gt;</a></h3>
 <p>==Marked text==</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-footnote">Footnotes</a></h3>
-<p>Footnote 1 link<sup><a href="#user-content-fn-first-7d5fec0f754a94cc792bf53735a46713" id="user-content-fnref-first-7d5fec0f754a94cc792bf53735a46713" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</p>
-<p>Footnote 2 link<sup><a href="#user-content-fn-second-7d5fec0f754a94cc792bf53735a46713" id="user-content-fnref-second-7d5fec0f754a94cc792bf53735a46713" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
+<p>Footnote 1 link<sup><a href="#user-content-fn-first-75089a13ed5049cc50eae8fb5c2fe38b" id="user-content-fnref-first-75089a13ed5049cc50eae8fb5c2fe38b" data-footnote-ref="" aria-describedby="footnote-label">1</a></sup>.</p>
+<p>Footnote 2 link<sup><a href="#user-content-fn-second-75089a13ed5049cc50eae8fb5c2fe38b" id="user-content-fnref-second-75089a13ed5049cc50eae8fb5c2fe38b" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
 <p>Inline footnote^[Text of inline footnote] definition.</p>
-<p>Duplicated footnote reference<sup><a href="#user-content-fn-second-7d5fec0f754a94cc792bf53735a46713" id="user-content-fnref-second-2-7d5fec0f754a94cc792bf53735a46713" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
+<p>Duplicated footnote reference<sup><a href="#user-content-fn-second-75089a13ed5049cc50eae8fb5c2fe38b" id="user-content-fnref-second-2-75089a13ed5049cc50eae8fb5c2fe38b" data-footnote-ref="" aria-describedby="footnote-label">2</a></sup>.</p>
 <h3><a href="https://github.com/markdown-it/markdown-it-deflist">Definition lists</a></h3>
 <p>Term 1</p>
 <p>:   Definition 1<br>
@@ -805,18 +805,20 @@ Third paragraph of definition 2.
 :::</p>
 <section data-footnotes="" class="footnotes"><h2 id="footnote-label" class="sr-only">Footnotes</h2>
 <ol>
-<li id="user-content-fn-first-7d5fec0f754a94cc792bf53735a46713">
+<li id="user-content-fn-first-75089a13ed5049cc50eae8fb5c2fe38b">
 <p>Footnote <strong>can have markup</strong></p>
-<p>and multiple paragraphs. <a href="#user-content-fnref-first-7d5fec0f754a94cc792bf53735a46713" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
+<p>and multiple paragraphs. <a href="#user-content-fnref-first-75089a13ed5049cc50eae8fb5c2fe38b" data-footnote-backref="" aria-label="Back to reference 1" class="data-footnote-backref">↩</a></p>
 </li>
-<li id="user-content-fn-second-7d5fec0f754a94cc792bf53735a46713">
-<p>Footnote text. <a href="#user-content-fnref-second-7d5fec0f754a94cc792bf53735a46713" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-second-2-7d5fec0f754a94cc792bf53735a46713" data-footnote-backref="" aria-label="Back to reference 2-2" class="data-footnote-backref">↩<sup>2</sup></a></p>
+<li id="user-content-fn-second-75089a13ed5049cc50eae8fb5c2fe38b">
+<p>Footnote text. <a href="#user-content-fnref-second-75089a13ed5049cc50eae8fb5c2fe38b" data-footnote-backref="" aria-label="Back to reference 2" class="data-footnote-backref">↩</a> <a href="#user-content-fnref-second-2-75089a13ed5049cc50eae8fb5c2fe38b" data-footnote-backref="" aria-label="Back to reference 2-2" class="data-footnote-backref">↩<sup>2</sup></a></p>
 </li>
 </ol>
 </section></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://wallleap.github.io/musical-computing-machine"> Blog Title </a>
 <p>
@@ -871,6 +873,8 @@ console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n\n","padding:5p
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
 document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
 
 function openComments(){
     cm=document.getElementById("comments");
